@@ -169,3 +169,146 @@ create table if not exists visitors_requests( -- sales tracking / payments
     constraint `visitors_requests_visitor_id_fk` foreign key (visitor_id) references visitors(id),
     constraint `visitors_requests_request_id_fk` foreign key (request_id) references printer_requests(id)
 );
+
+
+-- Insert data into tables --
+
+--  Artists, artifacts, and artworks data were generated using AI :)
+--  based on real historical contexts related to Jerusalem and Al-Aqsa, 
+--  for academic and modeling purposes only, not as an official museum record. 
+
+
+insert into artifacts 
+(name, description, origin, period, material, condition_status, location, image_url, acquisition_date) values
+('منبر صلاح الدين', 'نسخة أثرية من منبر المسجد الأقصى', 'القدس', 'العصر الأيوبي', 'خشب محفور', 'Excellent', 'المسجد الأقصى', 'https://d7rm5xoig729r.cloudfront.net/collectiveaccess/images/2/3/7/4/67817_ca_object_representations_media_237408_original.jpg', '1985-03-10'),
+('مفتاح باب حطة', 'مفتاح أثري لأحد أبواب المسجد الأقصى', 'القدس', 'العصر العثماني', 'حديد', 'Good', 'باب حطة', '', '1972-06-15'),
+('مخطوطة وقفية', 'وثيقة وقف تعود للعصر المملوكي', 'القدس', 'العصر المملوكي', 'ورق جلدي', 'Needs Maintenance', 'متحف الأقصى', '', '1991-09-20'),
+('قنديل نحاسي', 'قنديل إنارة قديم من قبة الصخرة', 'القدس', 'العصر العثماني', 'نحاس', 'Good', 'قبة الصخرة', '', '1988-12-01'),
+('باب خشبي مزخرف', 'جزء من باب أثري', 'القدس', 'العصر الأموي', 'خشب', 'Excellent', 'المتحف الإسلامي', '', '1975-05-11'),
+('عملة أموية', 'دينار أموي ضُرب في القدس', 'القدس', 'العصر الأموي', 'ذهب', 'Excellent', 'المتحف الإسلامي','', '1999-07-07'),
+('بلاطة فسيفساء', 'فسيفساء من ساحات الأقصى', 'القدس', 'العصر البيزنطي', 'حجر', 'Good', 'ساحات الأقصى', '', '1980-02-02'),
+('شمعدان أثري', 'شمعدان نحاسي قديم', 'القدس', 'العصر المملوكي', 'نحاس', 'Needs Maintenance', 'المتحف الإسلامي', '', '1993-10-18');
+
+
+insert into artists 
+(first_name, last_name, email, bio) values
+('كمال', 'بلاطة', 'kamal.balata@example.com', 'فنان تشكيلي فلسطيني'),
+('تمام', 'الأكحل', 'tammam.alakhal@example.com', 'فنانة فلسطينية معاصرة'),
+('سليمان', 'منصور', 'suleiman.mansour@example.com', 'أحد رواد الفن الفلسطيني'),
+('نبيل', 'عناني', 'nabil.annani@example.com', 'فنان تشكيلي من القدس'),
+('إسماعيل', 'شموط', 'ismail.shamout@example.com', 'فنان فلسطيني بارز');
+
+
+insert into artworks 
+(title, description, artwork_type, creation_year, location, image_url, artist_id) values
+('العودة إلى الوطن', 'لوحة تعبر عن حق العودة', 'Painting', 1975, 'متحف الفن الحديث - رام الله', '', 1),
+('الكرامة', 'لوحة تجسد نضال الشعب الفلسطيني', 'Painting', 1982, 'متحف الفن الحديث - رام الله', '', 2),
+('القدس في القلب', 'لوحة تعبر عن حب القدس', 'Painting', 1990, 'متحف الفن الحديث - رام الله', '', 3),
+('صمود الأرض', 'لوحة تعكس صمود الفلسطينيين', 'Painting', 1985, 'متحف الفن الحديث - رام الله', '', 4),
+('حكايات من فلسطين', 'لوحة تحكي قصص الفلسطينيين', 'Painting', 1995, 'متحف الفن الحديث - رام الله', '', 5);
+
+
+insert into staff 
+(first_name, last_name, role, email, hire_date) values
+('أحمد', 'نصر', 'Admin', 'admin@qudus.ps', '2018-01-01'),
+('ليلى', 'الخالدي', 'Curator', 'curator@qudus.ps', '2019-03-15'),
+('محمود', 'نصّار', 'Guide', 'guide@qudus.ps', '2020-06-10'),
+('سارة', 'القدسي', 'Designer', 'designer@qudus.ps', '2021-09-01'),
+('يوسف', 'التميمي', 'Security', 'security@qudus.ps', '2017-11-20'),
+('نور', 'البرغوثي', 'Volunteer', 'volunteer@qudus.ps', '2022-02-05');
+
+
+insert into visitors
+(first_name, last_name, email) values
+('محمد', 'البرغوثي', 'm.barghouti@mail.com'),
+('آمنة', 'الرجبي', 'a.rajabi@mail.com'),
+('خالد', 'هاني', 'k.hani@mail.com'),
+('هند', 'حيدر', 'h.hader@mail.com'),
+('رامي', 'البديري', 'r.budairi@mail.com');
+
+
+insert into exhibitions
+(title, start_date, end_date, description, status, manager_id) values
+('معرض المسجد الأقصى عبر العصور', '2024-01-10', '2024-03-30', 'يعرض تطور المسجد الأقصى تاريخياً', 'Past', 2),
+('القدس في الفن التشكيلي', '2024-04-05', '2024-06-20', 'لوحات فنية مستوحاة من القدس', 'Past', 2),
+('تحف إسلامية من الأقصى', '2024-07-01', '2024-09-15', 'مقتنيات أثرية نادرة من المسجد الأقصى', 'Ongoing', 2),
+('قبة الصخرة: رمز ومعنى', '2024-10-01', '2024-12-31', 'معرض متخصص بقبة الصخرة', 'Upcoming', 2),
+('القدس في الذاكرة', '2025-01-15', '2025-04-01', 'معرض تفاعلي يوثق الذاكرة المقدسية', 'Upcoming', 2);
+
+
+insert into visits
+(visitor_id, exhibition_id, feedback, rating) values
+(1, 1, 'معرض ثري ومؤثر جداً', 5),
+(2, 1, 'تنظيم ممتاز ومحتوى عميق', 4),
+(3, 2, 'اللوحات معبرة جداً', 5),
+(4, 3, 'التحف نادرة وتستحق الزيارة', 4),
+(5, 3, 'تجربة رائعة', 5),
+(1, 2, 'أحببت تنوع الأعمال الفنية', 4);
+
+
+insert into exhibition_artifacts
+(exhibition_id, artifact_id) values
+(1, 1),
+(1, 2),
+(1, 3),
+(3, 4),
+(3, 5),
+(3, 6),
+(4, 2);
+
+
+insert into exhibition_artworks
+(exhibition_id, artwork_id) values
+(2, 1),
+(2, 2),
+(2, 3),
+(5, 4),
+(5, 5),
+(4, 6);
+
+
+insert into exhibition_staff
+(exhibition_id, staff_id, role_in_exhibition) values
+(1, 2, 'Curator'),
+(1, 3, 'Guide'),
+(2, 2, 'Curator'),
+(2, 4, 'Designer'),
+(3, 5, 'Security'),
+(5, 3, 'Guide');
+
+
+insert into printer_requests
+(request_type, status, file_path, designer_id, visitor_id) values
+('3D Model - منبر صلاح الدين', 'Approved', '/prints/minbar.stl', 4, 1),
+('Replica - قبة الصخرة', 'Printed', '/prints/dome.obj', 4, 2),
+('Mini Artifact - قنديل نحاسي', 'Delivered', '/prints/lamp.stl', 4, 3),
+('3D Artwork - القدس في القلب', 'Approved', '/prints/jerusalem_art.stl', 4, 4),
+('Educational Model - بلاطة فسيفساء', 'Pending', '/prints/mosaic.stl', 4, 5);
+
+
+insert into requests_artifacts
+(request_id, artifact_id, scale, material_used) values
+(1, 1, 0.50, 'PLA'),
+(2, 4, 0.30, 'Resin'),
+(3, 4, 0.40, 'PLA'),
+(5, 7, 0.60, 'PLA'),
+(2, 2, 0.25, 'Resin');
+
+
+insert into requests_artworks
+(request_id, artwork_id, scale, material_used) values
+(4, 1, 0.40, 'PLA'),
+(4, 3, 0.35, 'Resin'),
+(2, 6, 0.50, 'PLA'),
+(1, 2, 0.30, 'PLA'),
+(5, 4, 0.45, 'PLA');
+
+
+insert into visitors_requests
+(visitor_id, request_id, price, payment_method, status) values
+(1, 1, 120.00, 'Cash', 'Paid'),
+(2, 2, 200.00, 'Credit Card', 'Paid'),
+(3, 3, 90.00, 'Mobile Payment', 'Paid'),
+(4, 4, 150.00, 'Bank Transfer', 'Pending'),
+(5, 5, 110.00, 'Cash', 'Paid');
+
