@@ -1,5 +1,6 @@
 -- QUDUS DATABASE SCHEMA --
 
+drop database qudus;
 create database if not exists qudus
 character set utf8mb4 collate utf8mb4_unicode_ci;
 use qudus;
@@ -82,7 +83,7 @@ create table if not exists visits(
     id int auto_increment,
     visitor_id int not null,
     exhibition_id int,
-    visit_date date default current_date,
+    visit_date timestamp default current_timestamp,
     feedback text,
     rating int check (rating between 1 and 5),
 
@@ -94,13 +95,13 @@ create table if not exists visits(
 create table if not exists printer_requests(
     id int auto_increment,
     request_type varchar(100) not null,
-    request_date date default current_date,
+    request_date timestamp default current_timestamp,
     status enum('Pending', 'Approved', 'Printed', 'Delivered', 'Rejected') default 'Pending',
     file_path varchar(255),
     designer_id int not null,
 
     constraint `requests_pk` primary key (id),
-    constraint `requests_designer_id_fk` foreign key (designer_id) references staff(id),
+    constraint `requests_designer_id_fk` foreign key (designer_id) references staff(id)
 );
 
 create table if not exists exhibition_artifacts( -- includes
@@ -264,7 +265,7 @@ insert into exhibition_artworks
 (2, 3),
 (5, 4),
 (5, 5),
-(4, 6);
+(4, 3);
 
 
 insert into exhibition_staff
@@ -278,12 +279,12 @@ insert into exhibition_staff
 
 
 insert into printer_requests
-(request_type, status, file_path, designer_id, visitor_id) values
-('3D Model - منبر صلاح الدين', 'Approved', '/prints/minbar.stl', 4, 1),
-('Replica - قبة الصخرة', 'Printed', '/prints/dome.obj', 4, 2),
-('Mini Artifact - قنديل نحاسي', 'Delivered', '/prints/lamp.stl', 4, 3),
-('3D Artwork - القدس في القلب', 'Approved', '/prints/jerusalem_art.stl', 4, 4),
-('Educational Model - بلاطة فسيفساء', 'Pending', '/prints/mosaic.stl', 4, 5);
+(request_type, status, file_path, designer_id) values
+('3D Model - منبر صلاح الدين', 'Approved', '/prints/minbar.stl', 4),
+('Replica - قبة الصخرة', 'Printed', '/prints/dome.obj', 4),
+('Mini Artifact - قنديل نحاسي', 'Delivered', '/prints/lamp.stl', 4),
+('3D Artwork - القدس في القلب', 'Approved', '/prints/jerusalem_art.stl', 4),
+('Educational Model - بلاطة فسيفساء', 'Pending', '/prints/mosaic.stl', 4);
 
 
 insert into requests_artifacts
@@ -299,7 +300,7 @@ insert into requests_artworks
 (request_id, artwork_id, scale, material_used) values
 (4, 1, 0.40, 'PLA'),
 (4, 3, 0.35, 'Resin'),
-(2, 6, 0.50, 'PLA'),
+(2, 5, 0.50, 'PLA'),
 (1, 2, 0.30, 'PLA'),
 (5, 4, 0.45, 'PLA');
 
