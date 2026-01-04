@@ -161,7 +161,7 @@ create table if not exists visitors_requests( -- sales tracking / payments
     request_id int not null,
     price decimal(10,2) not null,
     payment_method enum('Cash', 'Credit Card', 'Mobile Payment', 'Bank Transfer') not null,
-    currency VARCHAR(3) DEFAULT 'ILS',
+    currency varchar(3) default 'ILS',
     payment_date timestamp default current_timestamp,
     status enum('Paid', 'Pending', 'Failed') default 'Pending',
 
