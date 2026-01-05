@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QudusDBWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0889b090fe6b19fba6698e10a71b2c28bcfbf94")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+503b8032524a5fa7d2e620799f7554aba58f2022")]
 [assembly: System.Reflection.AssemblyProductAttribute("QudusDBWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QudusDBWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
