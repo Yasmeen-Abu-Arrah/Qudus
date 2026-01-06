@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\yabua\\Qudus\\QudusDBWeb\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|C:\\Users\\yabua\\Qudus\\QudusDBWeb\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|Solution Items{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA134D69-BBC7-4CC3-84AD-DF0ABA041CB7}|QudusDBWeb\\QudusDBWeb.csproj|c:\\users\\yabua\\qudus\\qudusdbweb\\qudusdbweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FA134D69-BBC7-4CC3-84AD-DF0ABA041CB7}|QudusDBWeb\\QudusDBWeb.csproj|solutionrelative:qudusdbweb\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA134D69-BBC7-4CC3-84AD-DF0ABA041CB7}|QudusDBWeb\\QudusDBWeb.csproj|c:\\users\\yabua\\qudus\\qudusdbweb\\qudusdbweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA134D69-BBC7-4CC3-84AD-DF0ABA041CB7}|QudusDBWeb\\QudusDBWeb.csproj|solutionrelative:qudusdbweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FA134D69-BBC7-4CC3-84AD-DF0ABA041CB7}|QudusDBWeb\\QudusDBWeb.csproj|c:\\users\\yabua\\qudus\\qudusdbweb\\qudusdbweb\\data\\qudusdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA134D69-BBC7-4CC3-84AD-DF0ABA041CB7}|QudusDBWeb\\QudusDBWeb.csproj|solutionrelative:qudusdbweb\\data\\qudusdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\yabua\\Qudus\\QudusDBWeb\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\yabua\\Qudus\\QudusDBWeb\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-05T19:29:14.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QudusDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\yabua\\Qudus\\QudusDBWeb\\QudusDBWeb\\Data\\QudusDbContext.cs",
+              "RelativeDocumentMoniker": "QudusDBWeb\\Data\\QudusDbContext.cs",
+              "ToolTip": "C:\\Users\\yabua\\Qudus\\QudusDBWeb\\QudusDBWeb\\Data\\QudusDbContext.cs",
+              "RelativeToolTip": "QudusDBWeb\\Data\\QudusDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T19:15:32.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\yabua\\Qudus\\QudusDBWeb\\QudusDBWeb\\appsettings.json",
+              "RelativeDocumentMoniker": "QudusDBWeb\\appsettings.json",
+              "ToolTip": "C:\\Users\\yabua\\Qudus\\QudusDBWeb\\QudusDBWeb\\appsettings.json",
+              "RelativeToolTip": "QudusDBWeb\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-05T19:12:39.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\yabua\\Qudus\\QudusDBWeb\\QudusDBWeb\\Program.cs",
+              "RelativeDocumentMoniker": "QudusDBWeb\\Program.cs",
+              "ToolTip": "C:\\Users\\yabua\\Qudus\\QudusDBWeb\\QudusDBWeb\\Program.cs",
+              "RelativeToolTip": "QudusDBWeb\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-05T19:00:00.332Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -2,13 +2,15 @@
 
 using Microsoft.EntityFrameworkCore;
 using QudusDBWeb.Data;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// Add DbContext with MySQL provider
+// Add DbContext with MySQL provider 
+/*
 builder.Services.AddDbContext<QudusDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -16,7 +18,15 @@ builder.Services.AddDbContext<QudusDbContext>(options =>
             builder.Configuration.GetConnectionString("DefaultConnection")
         )
     )
-);
+);*/
+
+var connectionString =
+    builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<QudusDbContext>(options =>
+    options.UseMySql(connectionString,
+        ServerVersion.AutoDetect(connectionString)));
+
 
 var app = builder.Build();
 
